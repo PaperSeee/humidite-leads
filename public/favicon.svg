@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Fond blanc arrondi -->
+  <rect width="32" height="32" rx="6" fill="#ffffff"/>
+
+  <!-- Maison -->
+  <polygon points="16,3 28,10 28,27 4,27" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Porte -->
+  <rect x="12" y="18" width="8" height="9" rx="1" fill="none" stroke="#1E3A5F" stroke-width="1.5"/>
+  <!-- Goutte dans la maison -->
+  <path d="M16 9 C16 9 11 16 11 20 C11 23.3 13.2 25 16 25 C18.8 25 21 23.3 21 20 C21 16 16 9 16 9Z" fill="#1E3A5F"/>
+  <!-- Reflet goutte -->
+  <ellipse cx="13.5" cy="19" rx="1.2" ry="2.5" fill="white" opacity="0.3" transform="rotate(-20 13.5 19)"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 90" width="520" height="90">
+  <!-- House outline blanc -->
+  <polygon points="52,18 80,4 108,18 108,62 52,62" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Door -->
+  <rect x="68" y="42" width="16" height="20" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <!-- Droplet inside house -->
+  <path d="M80 22 C80 22 72 34 72 40 C72 46 75.5 49 80 49 C84.5 49 88 46 88 40 C88 34 80 22 80 22Z" fill="#F97316"/>
+  <!-- Reflet goutte -->
+  <ellipse cx="76" cy="38" rx="2" ry="4" fill="white" opacity="0.3" transform="rotate(-20 76 38)"/>
+
+  <!-- Brand name -->
+  <text x="128" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#ffffff" letter-spacing="0.3">Traitement Humidité</text>
+  <text x="128" y="65" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#F97316" letter-spacing="3">BRUXELLES</text>
+
+  <!-- Tagline -->
+  <text x="128" y="82" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#94A3B8" letter-spacing="0.5">Expert certifié · Diagnostic gratuit · Garantie 10 ans</text>
+</svg>

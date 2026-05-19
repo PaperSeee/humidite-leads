@@ -1,0 +1,222 @@
+// TEMPLATE — Copie ce fichier dans src/app/blog/[ton-slug]/page.tsx
+//
+// ÉTAPES :
+// 1. Ajoute ton article dans src/lib/blog.ts (copie l'entrée existante et modifie les champs)
+// 2. Crée le dossier src/app/blog/[ton-slug]/
+// 3. Copie ce fichier dans ce dossier en le renommant page.tsx
+// 4. Remplace tous les marqueurs en MAJUSCULES par les vraies valeurs
+// 5. Remplace le contenu entre les commentaires "TON CONTENU ICI"
+
+import type { Metadata } from "next"
+import Link from "next/link"
+import Image from "next/image"
+import { Phone, ArrowRight, Calendar, Clock, User } from "lucide-react"
+import BreadcrumbSchema from "@/components/BreadcrumbSchema"
+import Breadcrumb from "@/components/Breadcrumb"
+import BlogCard from "@/components/BlogCard"
+import { getRecentPosts, getPostBySlug } from "@/lib/blog"
+
+// ─────────────────────────────────────────────
+// 1. Metadata SEO — à personnaliser
+// ─────────────────────────────────────────────
+export const metadata: Metadata = {
+  title: "TITRE ARTICLE | Traitement Humidité Bruxelles",
+  description: "DESCRIPTION 155 CHARS MAX — résumé accrocheur de l'article pour les moteurs de recherche.",
+  alternates: {
+    canonical: "https://traitement-humidite-bruxelles.be/blog/TON-SLUG",
+  },
+}
+
+export default function BlogPostPage() {
+  // ─────────────────────────────────────────────
+  // 2. Données de l'article — doit correspondre à src/lib/blog.ts
+  // ─────────────────────────────────────────────
+  const TON_SLUG = "TON-SLUG"
+  const post = getPostBySlug(TON_SLUG)
+
+  // Articles liés (exclut l'article courant)
+  const articlesLies = getRecentPosts(4).filter(p => p.slug !== TON_SLUG).slice(0, 3)
+
+  // ─────────────────────────────────────────────
+  // 3. Schema JSON-LD Article
+  // ─────────────────────────────────────────────
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: "TITRE ARTICLE",
+    description: "DESCRIPTION 155 CHARS",
+    image: "URL_IMAGE_ARTICLE",
+    datePublished: "2026-XX-XX",
+    dateModified: "2026-XX-XX",
+    author: {
+      "@type": "Organization",
+      name: "L'équipe Traitement Humidité Bruxelles",
+      url: "https://traitement-humidite-bruxelles.be",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Traitement Humidité Bruxelles",
+      url: "https://traitement-humidite-bruxelles.be",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://traitement-humidite-bruxelles.be/blog/${TON_SLUG}`,
+    },
+  }
+
+  return (
+    <>
+      {/* Schema Article JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+
+      {/* Schema Breadcrumb */}
+      <BreadcrumbSchema
+        items={[
+          { name: "Accueil", href: "/" },
+          { name: "Blog", href: "/blog" },
+          { name: "TITRE COURT", href: `/blog/${TON_SLUG}` },
+        ]}
+      />
+
+      {/* Breadcrumb visuel */}
+      <Breadcrumb
+        items={[
+          { label: "Accueil", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: "TITRE COURT" },
+        ]}
+      />
+
+      {/* ─── Hero image ─── */}
+      <div className="w-full h-64 sm:h-80 overflow-hidden relative">
+        <Image
+          src="URL_IMAGE_ARTICLE"
+          alt="ALT IMAGE DESCRIPTIF"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
+      {/* ─── Contenu article ─── */}
+      <section className="py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Meta : badge catégorie + date + durée + auteur */}
+          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-6">
+            <span className="bg-orange-100 text-[#F97316] text-xs font-semibold px-3 py-1 rounded-full">
+              {post?.category ?? "Conseils"}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Calendar size={14} />
+              <time dateTime="2026-XX-XX">{post?.dateLabel ?? "XX mois 2026"}</time>
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Clock size={14} />
+              {post?.readTime ?? "X min"} de lecture
+            </span>
+            <span className="flex items-center gap-1.5">
+              <User size={14} />
+              L&apos;équipe Traitement Humidité Bruxelles
+            </span>
+          </div>
+
+          {/* H1 */}
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+            TITRE ARTICLE COMPLET
+          </h1>
+
+          {/* Intro / chapeau */}
+          <p className="text-gray-600 text-lg leading-relaxed mb-8 border-l-4 border-[#F97316] pl-4">
+            PHRASE D&apos;ACCROCHE — résumé de 2-3 phrases qui donne envie de lire la suite.
+          </p>
+
+          {/* ═══════════════════════════════════════
+              TON CONTENU ICI
+              Structure suggérée :
+              - <h2> pour les grandes sections
+              - <h3> pour les sous-sections
+              - <p> pour les paragraphes
+              - Liens internes vers /services/* en text-[#F97316]
+              ═══════════════════════════════════════ */}
+
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            TITRE SECTION 1
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            Contenu de la section 1...
+          </p>
+
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            TITRE SECTION 2
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-8">
+            Contenu de la section 2...{" "}
+            <Link href="/services/remontee-capillaire" className="text-[#F97316] font-medium hover:underline">
+              lien interne vers un service
+            </Link>.
+          </p>
+
+          {/* ═══════════════════════════════════════
+              FIN DU CONTENU
+              ═══════════════════════════════════════ */}
+
+          {/* CTA final dans l'article */}
+          <div className="bg-[#1E3A5F] text-white rounded-2xl p-6 mb-8">
+            <h2 className="text-xl font-bold mb-3">
+              Un expert à votre service
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Notre équipe effectue des diagnostics gratuits toute l&apos;année.
+              Appelez-nous ou remplissez le formulaire de contact.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="tel:0451053370"
+                className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-5 py-3 rounded-xl transition-colors"
+              >
+                <Phone size={16} />
+                0451 05 33 70
+              </a>
+              <Link
+                href="/contact"
+                className="flex items-center justify-center gap-2 bg-white text-[#1E3A5F] hover:bg-gray-100 font-bold px-5 py-3 rounded-xl transition-colors"
+              >
+                Demander un diagnostic <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Navigation interne — articles liés */}
+          {articlesLies.length > 0 && (
+            <div className="border-t border-gray-200 pt-6">
+              <p className="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">
+                Articles liés
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {articlesLies.map((article) => (
+                  <Link
+                    key={article.slug}
+                    href={`/blog/${article.slug}`}
+                    className="text-sm text-[#1E3A5F] hover:text-[#F97316] border border-gray-200 px-3 py-1.5 rounded-lg transition-colors"
+                  >
+                    {article.title}
+                  </Link>
+                ))}
+                <Link
+                  href="/blog"
+                  className="text-sm text-[#1E3A5F] hover:text-[#F97316] border border-gray-200 px-3 py-1.5 rounded-lg transition-colors"
+                >
+                  Retour au blog
+                </Link>
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+    </>
+  )
+}

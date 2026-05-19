@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 
@@ -33,12 +34,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="text-white font-bold text-lg leading-tight">
-              Traitement<br className="hidden sm:block" />
-              <span className="text-[#F97316]">Humidité</span>
-            </span>
-            <span className="text-gray-300 text-sm hidden md:block">Bruxelles</span>
+          <Link href="/" className="flex items-center shrink-0">
+            <Image
+              src="/logo-white.svg"
+              alt="Traitement Humidité Bruxelles"
+              width={220}
+              height={48}
+              priority
+              className="h-11 w-auto"
+            />
           </Link>
 
           {/* Desktop nav */}

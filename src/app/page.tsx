@@ -16,6 +16,8 @@ import {
 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import FAQAccordion from "@/components/FAQAccordion";
+import BlogCard from "@/components/BlogCard";
+import { getRecentPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Traitement Humidité Bruxelles — Expert Certifié | Traitement Humidité Bruxelles",
@@ -63,6 +65,50 @@ const homeFaqs = [
       "Cela dépend de votre contrat. En Belgique, les dégâts des eaux liés à des infiltrations soudaines (rupture de canalisation, tempête) sont généralement couverts. En revanche, les problèmes d'humidité chronique comme les remontées capillaires sont souvent considérés comme un défaut d'entretien et non couverts. Nous pouvons vous fournir un rapport technique pour votre assureur.",
   },
 ];
+
+function RecentPostsSection() {
+  const recentPosts = getRecentPosts(2);
+
+  if (recentPosts.length === 0) return null;
+
+  return (
+    <section className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-end justify-between mb-10">
+          <div>
+            <p className="text-[#F97316] font-semibold text-sm uppercase tracking-wide mb-2">
+              Blog & Conseils
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+              Nos derniers conseils
+            </h2>
+          </div>
+          <Link
+            href="/blog"
+            className="hidden sm:flex items-center gap-1 text-[#1E3A5F] font-semibold hover:text-[#F97316] transition-colors text-sm"
+          >
+            Voir tous les articles <ArrowRight size={16} />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {recentPosts.map((post) => (
+            <BlogCard key={post.slug} post={post} featured />
+          ))}
+        </div>
+
+        <div className="mt-8 text-center sm:hidden">
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-1 text-[#1E3A5F] font-semibold hover:text-[#F97316] transition-colors"
+          >
+            Voir tous les articles <ArrowRight size={16} />
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function HomePage() {
   const faqSchema = {
@@ -429,9 +475,6 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-gray-500 mt-8">
-            Une fois votre site en ligne, vos vrais clients pourront laisser leurs avis directement sur votre fiche Google Business Profile.
-          </p>
         </div>
       </section>
 
@@ -457,6 +500,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ARTICLES RÉCENTS */}
+      <RecentPostsSection />
 
       {/* CTA CONTACT */}
       <section id="contact" className="py-16 bg-[#1E3A5F]">
