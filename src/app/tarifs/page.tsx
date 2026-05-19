@@ -8,7 +8,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Tarifs Traitement Humidité Bruxelles — Devis Gratuit | Traitement Humidité Bruxelles",
   description:
-    "Tarifs indicatifs traitement humidité à Bruxelles. Remontée capillaire 80–150€/ml, mérule 25–45€/m². Diagnostic gratuit, devis détaillé sans engagement. 0451 05 33 70",
+    "Tarifs indicatifs traitement humidité à Bruxelles. Remontée capillaire 80–150€/ml, mérule 25–45€/m². Diagnostic gratuit, devis détaillé sans engagement. 0489 57 65 65",
   alternates: {
     canonical: "https://traitement-humidite-bruxelles.be/tarifs",
   },
@@ -255,8 +255,8 @@ export default function TarifsPage() {
                   </div>
                 ))}
               </div>
-              <a href="tel:0451053370" className="flex items-center gap-2 text-[#F97316] font-bold text-lg">
-                <Phone size={20} />0451 05 33 70
+              <a href="tel:0489576565" className="flex items-center gap-2 text-[#F97316] font-bold text-lg">
+                <Phone size={20} />0489 57 65 65
               </a>
               <p className="text-gray-400 text-xs mt-1">Lun–Ven 8h–18h | Sam 9h–15h</p>
             </div>

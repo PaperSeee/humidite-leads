@@ -9,7 +9,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Traitement Mérule Bruxelles — Champignon Urgence | Traitement Humidité Bruxelles",
   description:
-    "Traitement d'urgence mérule à Bruxelles. Diagnostic, fongicide professionnel, rapport pour notaire. La mérule détruit votre structure : appelez le 0451 05 33 70 maintenant.",
+    "Traitement d'urgence mérule à Bruxelles. Diagnostic, fongicide professionnel, rapport pour notaire. La mérule détruit votre structure : appelez le 0489 57 65 65 maintenant.",
   alternates: {
     canonical: "https://traitement-humidite-bruxelles.be/services/merule",
   },
@@ -59,7 +59,7 @@ export default function MerulePage() {
     provider: {
       "@type": "LocalBusiness",
       name: "Traitement Humidité Bruxelles",
-      telephone: "0451053370",
+      telephone: "0489576565",
     },
     areaServed: "Bruxelles",
     offers: {
@@ -139,11 +139,11 @@ export default function MerulePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
             >
               <Phone size={18} />
-              URGENCE — 0451 05 33 70
+              URGENCE — 0489 57 65 65
             </a>
             <Link
               href="/contact"
@@ -368,11 +368,11 @@ export default function MerulePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="tel:0451053370"
+                href="tel:0489576565"
                 className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-800 text-white font-bold px-6 py-3 rounded-xl transition-colors"
               >
                 <Phone size={18} />
-                URGENCE — 0451 05 33 70
+                URGENCE — 0489 57 65 65
               </a>
               <Link
                 href="/tarifs"
@@ -446,11 +446,11 @@ export default function MerulePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
             >
               <Phone size={18} />
-              Appeler maintenant — 0451 05 33 70
+              Appeler maintenant — 0489 57 65 65
             </a>
             <Link
               href="/contact"

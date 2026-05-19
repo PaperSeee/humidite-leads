@@ -10,7 +10,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Traitement Humidité Auderghem — Infiltrations Fondations | Traitement Humidité Bruxelles",
   description:
-    "Expert humidité à Auderghem. Maisons 4 façades, infiltrations par fondations, jardins. Diagnostic gratuit, garantie 10 ans. Appelez le 0451 05 33 70.",
+    "Expert humidité à Auderghem. Maisons 4 façades, infiltrations par fondations, jardins. Diagnostic gratuit, garantie 10 ans. Appelez le 0489 57 65 65.",
   alternates: {
     canonical: "https://traitement-humidite-bruxelles.be/communes/auderghem",
   },
@@ -70,8 +70,8 @@ export default function AuderghemPage() {
               avec des solutions adaptées à ce type de bâti.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href="tel:0451053370" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-5 py-3 rounded-xl transition-colors">
-                <Phone size={18} />0451 05 33 70
+              <a href="tel:0489576565" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-5 py-3 rounded-xl transition-colors">
+                <Phone size={18} />0489 57 65 65
               </a>
               <a href="#contact" className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-3 rounded-xl transition-colors">
                 Devis gratuit <ArrowRight size={16} />
@@ -192,8 +192,8 @@ export default function AuderghemPage() {
                 <MapPin size={18} className="text-[#F97316]" />
                 <span className="text-gray-300 text-sm">Intervention à Auderghem et communes voisines</span>
               </div>
-              <a href="tel:0451053370" className="flex items-center gap-2 text-[#F97316] font-bold text-xl mt-4">
-                <Phone size={22} />0451 05 33 70
+              <a href="tel:0489576565" className="flex items-center gap-2 text-[#F97316] font-bold text-xl mt-4">
+                <Phone size={22} />0489 57 65 65
               </a>
             </div>
             <div className="bg-white rounded-2xl p-6">

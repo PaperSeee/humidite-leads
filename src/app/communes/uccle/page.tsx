@@ -10,7 +10,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Traitement Humidité Uccle — Expert Local | Traitement Humidité Bruxelles",
   description:
-    "Spécialiste traitement humidité à Uccle. Remontées capillaires dans villas art déco, caves humides, jardins en pente. Diagnostic gratuit, intervention 48h. 0451 05 33 70",
+    "Spécialiste traitement humidité à Uccle. Remontées capillaires dans villas art déco, caves humides, jardins en pente. Diagnostic gratuit, intervention 48h. 0489 57 65 65",
   alternates: {
     canonical:
       "https://traitement-humidite-bruxelles.be/communes/uccle",
@@ -88,11 +88,11 @@ export default function UcclePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="tel:0451053370"
+                href="tel:0489576565"
                 className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-5 py-3 rounded-xl transition-colors"
               >
                 <Phone size={18} />
-                0451 05 33 70
+                0489 57 65 65
               </a>
               <a
                 href="#contact"
@@ -321,11 +321,11 @@ export default function UcclePage() {
                 </span>
               </div>
               <a
-                href="tel:0451053370"
+                href="tel:0489576565"
                 className="flex items-center gap-2 text-[#F97316] font-bold text-xl mt-4"
               >
                 <Phone size={22} />
-                0451 05 33 70
+                0489 57 65 65
               </a>
             </div>
             <div className="bg-white rounded-2xl p-6">

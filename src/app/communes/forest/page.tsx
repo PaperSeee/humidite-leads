@@ -10,7 +10,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Traitement Humidité Forest — Maisons Ouvrières Salpêtre | Traitement Humidité Bruxelles",
   description:
-    "Expert humidité à Forest. Maisons ouvrières, briques exposées, salpêtre. Traitement remontée capillaire, mérule. Diagnostic gratuit. 0451 05 33 70",
+    "Expert humidité à Forest. Maisons ouvrières, briques exposées, salpêtre. Traitement remontée capillaire, mérule. Diagnostic gratuit. 0489 57 65 65",
   alternates: {
     canonical: "https://traitement-humidite-bruxelles.be/communes/forest",
   },
@@ -70,8 +70,8 @@ export default function ForestPage() {
               des solutions durables respectueuses de ce bâti historique.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href="tel:0451053370" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-5 py-3 rounded-xl transition-colors">
-                <Phone size={18} />0451 05 33 70
+              <a href="tel:0489576565" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-5 py-3 rounded-xl transition-colors">
+                <Phone size={18} />0489 57 65 65
               </a>
               <a href="#contact" className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-3 rounded-xl transition-colors">
                 Devis gratuit <ArrowRight size={16} />
@@ -201,8 +201,8 @@ export default function ForestPage() {
                 <MapPin size={18} className="text-[#F97316]" />
                 <span className="text-gray-300 text-sm">Intervention à Forest et communes voisines</span>
               </div>
-              <a href="tel:0451053370" className="flex items-center gap-2 text-[#F97316] font-bold text-xl mt-4">
-                <Phone size={22} />0451 05 33 70
+              <a href="tel:0489576565" className="flex items-center gap-2 text-[#F97316] font-bold text-xl mt-4">
+                <Phone size={22} />0489 57 65 65
               </a>
             </div>
             <div className="bg-white rounded-2xl p-6">

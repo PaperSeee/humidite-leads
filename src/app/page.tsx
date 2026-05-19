@@ -22,7 +22,7 @@ import { getRecentPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Traitement Humidité Bruxelles — Expert Certifié | Traitement Humidité Bruxelles",
   description:
-    "Expert traitement humidité à Bruxelles. Diagnostic gratuit, intervention en 48h, garantie 10 ans. Remontée capillaire, mérule, condensation, infiltrations. Appelez le 0451 05 33 70.",
+    "Expert traitement humidité à Bruxelles. Diagnostic gratuit, intervention en 48h, garantie 10 ans. Remontée capillaire, mérule, condensation, infiltrations. Appelez le 0489 57 65 65.",
   alternates: { canonical: "https://traitement-humidite-bruxelles.be/" },
 };
 
@@ -170,11 +170,11 @@ export default function HomePage() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:0451053370"
+                href="tel:0489576565"
                 className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-4 rounded-xl text-lg transition-colors"
               >
                 <Phone size={20} />
-                0451 05 33 70
+                0489 57 65 65
               </a>
               <a
                 href="#contact"
@@ -548,11 +548,11 @@ export default function HomePage() {
                   Préférez-vous appeler ?
                 </p>
                 <a
-                  href="tel:0451053370"
+                  href="tel:0489576565"
                   className="flex items-center gap-2 text-[#F97316] font-bold text-xl hover:text-orange-400 transition-colors"
                 >
                   <Phone size={24} />
-                  0451 05 33 70
+                  0489 57 65 65
                 </a>
                 <p className="text-gray-400 text-xs mt-1">
                   Lun–Ven 8h–18h | Sam 9h–15h | Urgences 7j/7

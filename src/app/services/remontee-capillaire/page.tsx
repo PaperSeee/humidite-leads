@@ -9,7 +9,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Traitement Remontée Capillaire Bruxelles — Injection Silicone | Traitement Humidité Bruxelles",
   description:
-    "Traitement remontée capillaire à Bruxelles par injection de résine silicone. Diagnostic gratuit, garantie 10 ans. Appelez le 0451 05 33 70 pour un devis.",
+    "Traitement remontée capillaire à Bruxelles par injection de résine silicone. Diagnostic gratuit, garantie 10 ans. Appelez le 0489 57 65 65 pour un devis.",
   alternates: {
     canonical: "https://traitement-humidite-bruxelles.be/services/remontee-capillaire",
   },
@@ -64,7 +64,7 @@ export default function RemonteeCapillairePage() {
     provider: {
       "@type": "LocalBusiness",
       name: "Traitement Humidité Bruxelles",
-      telephone: "0451053370",
+      telephone: "0489576565",
     },
     areaServed: "Bruxelles",
     offers: {
@@ -137,11 +137,11 @@ export default function RemonteeCapillairePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
             >
               <Phone size={18} />
-              0451 05 33 70 — Appel gratuit
+              0489 57 65 65 — Appel gratuit
             </a>
             <Link
               href="/contact"
@@ -344,11 +344,11 @@ export default function RemonteeCapillairePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="tel:0451053370"
+                href="tel:0489576565"
                 className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
               >
                 <Phone size={18} />
-                Devis gratuit au 0451 05 33 70
+                Devis gratuit au 0489 57 65 65
               </a>
               <Link
                 href="/tarifs"
@@ -422,11 +422,11 @@ export default function RemonteeCapillairePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
             >
               <Phone size={18} />
-              Appeler le 0451 05 33 70
+              Appeler le 0489 57 65 65
             </a>
             <Link
               href="/contact"

@@ -7,7 +7,7 @@ export default function LocalBusinessSchema() {
     description:
       "Expert traitement humidité à Bruxelles. Remontée capillaire, mérule, condensation, infiltrations. Diagnostic gratuit, intervention 48h, garantie 10 ans.",
     url: "https://traitement-humidite-bruxelles.be",
-    telephone: "0451053370",
+    telephone: "0489576565",
     email: "contact@traitement-humidite-bruxelles.be",
     address: {
       "@type": "PostalAddress",

@@ -370,11 +370,11 @@ export default function ArticleHumiditeHiverPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="tel:0451053370"
+                href="tel:0489576565"
                 className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-5 py-3 rounded-xl transition-colors"
               >
                 <Phone size={16} />
-                0451 05 33 70
+                0489 57 65 65
               </a>
               <Link
                 href="/contact"

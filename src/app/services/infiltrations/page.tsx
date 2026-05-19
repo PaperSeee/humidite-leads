@@ -9,7 +9,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Traitement Infiltrations d'Eau Bruxelles — Toiture Façade Terrasse | Traitement Humidité Bruxelles",
   description:
-    "Traitement des infiltrations d'eau à Bruxelles : toiture, façade, terrasse, fondations. Diagnostic thermographique, solutions durables. Appelez le 0451 05 33 70.",
+    "Traitement des infiltrations d'eau à Bruxelles : toiture, façade, terrasse, fondations. Diagnostic thermographique, solutions durables. Appelez le 0489 57 65 65.",
   alternates: {
     canonical: "https://traitement-humidite-bruxelles.be/services/infiltrations",
   },
@@ -82,7 +82,7 @@ export default function InfiltrationsPage() {
     provider: {
       "@type": "LocalBusiness",
       name: "Traitement Humidité Bruxelles",
-      telephone: "0451053370",
+      telephone: "0489576565",
     },
     areaServed: "Bruxelles",
   };
@@ -146,11 +146,11 @@ export default function InfiltrationsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
             >
               <Phone size={18} />
-              0451 05 33 70 — Diagnostic gratuit
+              0489 57 65 65 — Diagnostic gratuit
             </a>
             <Link
               href="/contact"
@@ -340,11 +340,11 @@ export default function InfiltrationsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
             >
               <Phone size={18} />
-              Appeler le 0451 05 33 70
+              Appeler le 0489 57 65 65
             </a>
             <Link
               href="/contact"

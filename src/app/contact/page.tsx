@@ -8,7 +8,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Contact — Diagnostic Gratuit Humidité Bruxelles | Traitement Humidité Bruxelles",
   description:
-    "Contactez Traitement Humidité Bruxelles pour votre diagnostic gratuit humidité. Formulaire en ligne, téléphone 0451 05 33 70. Réponse sous 2h en heures ouvrables.",
+    "Contactez Traitement Humidité Bruxelles pour votre diagnostic gratuit humidité. Formulaire en ligne, téléphone 0489 57 65 65. Réponse sous 2h en heures ouvrables.",
   alternates: {
     canonical: "https://traitement-humidite-bruxelles.be/contact",
   },
@@ -63,8 +63,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 text-sm">Téléphone</p>
-                      <a href="tel:0451053370" className="text-[#1E3A5F] font-bold text-lg hover:text-[#F97316] transition-colors">
-                        0451 05 33 70
+                      <a href="tel:0489576565" className="text-[#1E3A5F] font-bold text-lg hover:text-[#F97316] transition-colors">
+                        0489 57 65 65
                       </a>
                       <p className="text-gray-500 text-xs">Urgences 7j/7</p>
                     </div>
@@ -133,8 +133,8 @@ export default function ContactPage() {
                   La mérule est une urgence absolue. Appelez-nous immédiatement
                   pour une intervention prioritaire.
                 </p>
-                <a href="tel:0451053370" className="flex items-center gap-2 text-[#F97316] font-bold">
-                  <Phone size={18} />0451 05 33 70
+                <a href="tel:0489576565" className="flex items-center gap-2 text-[#F97316] font-bold">
+                  <Phone size={18} />0489 57 65 65
                 </a>
               </div>
             </div>

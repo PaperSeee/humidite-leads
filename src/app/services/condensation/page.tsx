@@ -9,7 +9,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "Traitement Humidité Condensation Bruxelles — VMC Isolation | Traitement Humidité Bruxelles",
   description:
-    "Résoudre l'humidité par condensation à Bruxelles : VMC hygro-réglable, isolation, traitement ponts thermiques. Diagnostic gratuit, appelez le 0451 05 33 70.",
+    "Résoudre l'humidité par condensation à Bruxelles : VMC hygro-réglable, isolation, traitement ponts thermiques. Diagnostic gratuit, appelez le 0489 57 65 65.",
   alternates: {
     canonical: "https://traitement-humidite-bruxelles.be/services/condensation",
   },
@@ -59,7 +59,7 @@ export default function CondensationPage() {
     provider: {
       "@type": "LocalBusiness",
       name: "Traitement Humidité Bruxelles",
-      telephone: "0451053370",
+      telephone: "0489576565",
     },
     areaServed: "Bruxelles",
   };
@@ -124,11 +124,11 @@ export default function CondensationPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
             >
               <Phone size={18} />
-              0451 05 33 70 — Diagnostic gratuit
+              0489 57 65 65 — Diagnostic gratuit
             </a>
             <Link
               href="/contact"
@@ -396,11 +396,11 @@ export default function CondensationPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors"
             >
               <Phone size={18} />
-              Appeler le 0451 05 33 70
+              Appeler le 0489 57 65 65
             </a>
             <Link
               href="/contact"

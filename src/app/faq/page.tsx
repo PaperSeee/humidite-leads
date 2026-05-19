@@ -8,7 +8,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "FAQ Traitement Humidité Bruxelles — Toutes Vos Questions | Traitement Humidité Bruxelles",
   description:
-    "Toutes les réponses sur le traitement de l'humidité à Bruxelles. Coût, durée, mérule, garantie, subventions, assurance. Experts disponibles au 0451 05 33 70.",
+    "Toutes les réponses sur le traitement de l'humidité à Bruxelles. Coût, durée, mérule, garantie, subventions, assurance. Experts disponibles au 0489 57 65 65.",
   alternates: {
     canonical: "https://traitement-humidite-bruxelles.be/faq",
   },
@@ -69,7 +69,7 @@ const allFaqs = [
   },
   {
     question: "Intervenez-vous en urgence pour la mérule ?",
-    answer: "Oui, pour les cas de mérule avérée, nous proposons des interventions d'urgence avec un délai de prise en charge de 24 à 48 heures. La mérule progresse rapidement et chaque jour de retard aggrave les dégâts et augmente le coût des travaux. Appelez-nous directement au 0451 05 33 70 pour signaler une urgence — nous ferons le nécessaire pour intervenir le plus vite possible.",
+    answer: "Oui, pour les cas de mérule avérée, nous proposons des interventions d'urgence avec un délai de prise en charge de 24 à 48 heures. La mérule progresse rapidement et chaque jour de retard aggrave les dégâts et augmente le coût des travaux. Appelez-nous directement au 0489 57 65 65 pour signaler une urgence — nous ferons le nécessaire pour intervenir le plus vite possible.",
   },
   {
     question: "Quelle zone couvrez-vous à Bruxelles ?",
@@ -143,8 +143,8 @@ export default function FAQPage() {
             brefs délais ou vous proposera un diagnostic gratuit sur site.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:0451053370" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
-              <Phone size={18} />0451 05 33 70
+            <a href="tel:0489576565" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+              <Phone size={18} />0489 57 65 65
             </a>
             <Link href="/contact" className="flex items-center justify-center gap-2 bg-[#1E3A5F] hover:bg-blue-900 text-white font-bold px-6 py-3 rounded-xl transition-colors">
               Formulaire de contact <ArrowRight size={16} />

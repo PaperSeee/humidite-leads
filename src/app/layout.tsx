@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Traitement Humidité Bruxelles | Traitement Humidité Bruxelles",
   description:
-    "Expert traitement humidité à Bruxelles. Remontée capillaire, mérule, condensation, infiltrations. Diagnostic gratuit, intervention 48h. Appelez le 0451 05 33 70.",
+    "Expert traitement humidité à Bruxelles. Remontée capillaire, mérule, condensation, infiltrations. Diagnostic gratuit, intervention 48h. Appelez le 0489 57 65 65.",
   metadataBase: new URL("https://traitement-humidite-bruxelles.be"),
   alternates: {
     canonical: "/",
@@ -54,7 +54,7 @@ export default function RootLayout({
         {/* Floating action buttons - mobile only */}
         <div className="fixed bottom-6 right-4 z-40 sm:hidden flex flex-col gap-3">
           <a
-            href="https://wa.me/32451053370"
+            href="https://wa.me/32489576565"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-green-500 text-white rounded-full shadow-2xl transition-colors"
@@ -63,7 +63,7 @@ export default function RootLayout({
             <MessageCircle size={26} />
           </a>
           <a
-            href="tel:0451053370"
+            href="tel:0489576565"
             className="flex items-center justify-center w-14 h-14 bg-[#F97316] hover:bg-orange-500 text-white rounded-full shadow-2xl transition-colors"
             aria-label="Appeler"
           >

@@ -42,7 +42,7 @@ export default function MentionsLegalesPage() {
                 <p><strong>Forme juridique :</strong> Entreprise individuelle</p>
                 <p><strong>Siège social :</strong> Bruxelles, Belgique</p>
                 <p><strong>Zone d&apos;activité :</strong> Région de Bruxelles-Capitale</p>
-                <p><strong>Téléphone :</strong> <a href="tel:0451053370" className="text-[#1E3A5F] font-medium">0451 05 33 70</a></p>
+                <p><strong>Téléphone :</strong> <a href="tel:0489576565" className="text-[#1E3A5F] font-medium">0489 57 65 65</a></p>
                 <p><strong>Email :</strong> <a href="mailto:contact@traitement-humidite-bruxelles.be" className="text-[#1E3A5F] font-medium">contact@traitement-humidite-bruxelles.be</a></p>
                 <p><strong>Site web :</strong> traitement-humidite-bruxelles.be</p>
               </div>

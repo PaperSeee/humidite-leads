@@ -141,11 +141,11 @@ export default function Header() {
           {/* CTA phone */}
           <div className="hidden sm:flex items-center gap-3">
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors"
             >
               <Phone size={16} />
-              <span>0451 05 33 70</span>
+              <span>0489 57 65 65</span>
             </a>
           </div>
 
@@ -241,7 +241,7 @@ export default function Header() {
               Contact
             </Link>
             <a
-              href="tel:0451053370"
+              href="tel:0489576565"
               className="flex items-center justify-center gap-2 bg-[#F97316] text-white font-semibold px-4 py-3 rounded-lg mt-2"
             >
               <Phone size={18} />

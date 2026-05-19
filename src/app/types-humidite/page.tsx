@@ -225,8 +225,8 @@ export default function TypesHumiditePage() {
                 <p className="font-semibold mb-1">Tarif indicatif :</p>
                 <p className="text-yellow-300 text-lg font-bold">25 – 45 € / m²</p>
                 <p className="text-red-200 text-xs mt-1">Devis urgent possible sous 24h — N&apos;attendez pas pour appeler</p>
-                <a href="tel:0451053370" className="flex items-center gap-2 mt-2 text-white font-bold">
-                  <Phone size={16} />0451 05 33 70
+                <a href="tel:0489576565" className="flex items-center gap-2 mt-2 text-white font-bold">
+                  <Phone size={16} />0489 57 65 65
                 </a>
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function TypesHumiditePage() {
             précisément le type d&apos;humidité et vous proposeront le traitement adapté.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:0451053370" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+            <a href="tel:0489576565" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
               <Phone size={18} />Appeler maintenant
             </a>
             <Link href="/contact" className="flex items-center justify-center gap-2 bg-white text-[#1E3A5F] hover:bg-gray-100 font-bold px-6 py-3 rounded-xl transition-colors">

@@ -201,8 +201,8 @@ export default function AProposPage() {
             d&apos;humidité. Contactez-nous pour un diagnostic gratuit.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:0451053370" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
-              <Phone size={18} />0451 05 33 70
+            <a href="tel:0489576565" className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+              <Phone size={18} />0489 57 65 65
             </a>
             <Link href="/contact" className="flex items-center justify-center gap-2 bg-white text-[#1E3A5F] hover:bg-gray-100 font-bold px-6 py-3 rounded-xl transition-colors">
               Demander un devis
