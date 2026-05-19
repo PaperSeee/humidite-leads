@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HumiPro Bruxelles — Site de Génération de Leads
 
-## Getting Started
+Site Next.js production-ready pour la génération de leads dans la niche **traitement de l'humidité à Bruxelles**.
 
-First, run the development server:
+## Stack technique
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **Lucide React** (icônes)
+- Images : Unsplash (domaine configuré dans next.config.ts)
+- Déployable sur Vercel sans configuration
+
+## Structure
+
+```
+src/app/
+├── page.tsx                          # Page d'accueil
+├── layout.tsx                        # Layout global avec Header/Footer
+├── sitemap.ts                        # Sitemap XML dynamique
+├── robots.ts                         # Robots.txt
+├── communes/
+│   ├── uccle/
+│   ├── ixelles/
+│   ├── woluwe-saint-pierre/
+│   ├── woluwe-saint-lambert/
+│   ├── auderghem/
+│   ├── watermael-boitsfort/
+│   ├── etterbeek/
+│   ├── forest/
+│   └── saint-gilles/
+├── types-humidite/
+├── tarifs/
+├── faq/
+├── contact/
+├── a-propos/
+└── mentions-legales/
+
+src/components/
+├── Header.tsx              # Navigation sticky + CTA téléphone
+├── Footer.tsx              # NAP + liens communes + légaux
+├── ContactForm.tsx         # Formulaire avec validation
+├── FAQAccordion.tsx        # Accordion interactif
+├── TestimonialCard.tsx     # Cartes témoignages
+├── ServiceCard.tsx         # Cartes services
+├── LocalBusinessSchema.tsx # JSON-LD Schema.org LocalBusiness
+└── BreadcrumbSchema.tsx    # JSON-LD Schema.org Breadcrumb
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Déploiement sur Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Option 1 : Via CLI Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install -g vercel
+cd /Users/paperhq/Leads/humidite-bruxelles
+vercel
+```
 
-## Learn More
+### Option 2 : Via l'interface Vercel
 
-To learn more about Next.js, take a look at the following resources:
+1. Allez sur [vercel.com](https://vercel.com)
+2. Cliquez "Add New Project"
+3. Importez depuis GitHub (pushez d'abord ce repo)
+4. Vercel détecte Next.js automatiquement — cliquez "Deploy"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Variables d'environnement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Aucune variable d'environnement requise pour le déploiement de base.
 
-## Deploy on Vercel
+## Développement local
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm install
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ouvrez [http://localhost:3000](http://localhost:3000).
+
+## Build de production
+
+```bash
+npm run build
+npm start
+```
+
+## Changer le numéro de téléphone et l'email
+
+Faites un remplacement global sur :
+- `+3225884723` → votre numéro format tel:
+- `+32 2 588 47 23` → votre numéro affiché
+- `contact@traitement-humidite-bruxelles.be` → votre email
+
+## Connecter le formulaire à un vrai backend
+
+Le fichier `src/components/ContactForm.tsx` simule l'envoi avec `console.log`.
+
+### Option Formspree (recommandée, gratuit jusqu'à 50 soumissions/mois)
+
+1. Créez un compte sur formspree.io
+2. Créez un nouveau formulaire et copiez l'ID
+3. Dans `ContactForm.tsx`, remplacez `handleSubmit` :
+
+```tsx
+const res = await fetch("https://formspree.io/f/VOTRE_ID", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(form),
+});
+if (res.ok) setSubmitted(true);
+```
+
+## Domaine personnalisé sur Vercel
+
+1. Dashboard Vercel > votre projet > Settings > Domains
+2. Ajoutez `traitement-humidite-bruxelles.be`
+3. Configurez les DNS chez votre registrar :
+   - Record A : `76.76.21.21`
+   - Record CNAME `www` : `cname.vercel-dns.com`
+
+## SEO inclus
+
+- Sitemap XML automatique (`/sitemap.xml`)
+- Robots.txt (`/robots.txt`)
+- Schema.org LocalBusiness (toutes les pages)
+- Schema.org FAQPage (`/` et `/faq`)
+- Schema.org BreadcrumbList (pages internes)
+- Canonical URLs par page
+- OpenGraph metadata
+- Balises title et description optimisées par page
