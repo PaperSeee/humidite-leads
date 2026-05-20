@@ -57,38 +57,9 @@ export default function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-6 text-sm">
-            <Link
-              href="/"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
+            <Link href="/" className="text-gray-300 hover:text-white transition-colors">
               Accueil
             </Link>
-
-            {/* Communes dropdown */}
-            <div className="relative group">
-              <button
-                className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors"
-                onMouseEnter={() => setCommunesOpen(true)}
-                onMouseLeave={() => setCommunesOpen(false)}
-              >
-                Communes <ChevronDown size={14} />
-              </button>
-              <div
-                className={`absolute top-full left-0 bg-white shadow-xl rounded-lg py-2 w-56 transition-all duration-200 ${communesOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
-                onMouseEnter={() => setCommunesOpen(true)}
-                onMouseLeave={() => setCommunesOpen(false)}
-              >
-                {communes.map((c) => (
-                  <Link
-                    key={c.slug}
-                    href={`/communes/${c.slug}`}
-                    className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-[#F97316] text-sm transition-colors"
-                  >
-                    {c.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
 
             {/* Services dropdown */}
             <div className="relative group">
@@ -116,34 +87,36 @@ export default function Header() {
               </div>
             </div>
 
-            <Link
-              href="/types-humidite"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              Types d&apos;humidité
-            </Link>
-            <Link
-              href="/blog"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              Blog
-            </Link>
-            <Link
-              href="/tarifs"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
+            {/* Communes dropdown */}
+            <div className="relative group">
+              <button
+                className="flex items-center gap-1 text-gray-300 hover:text-white transition-colors"
+                onMouseEnter={() => setCommunesOpen(true)}
+                onMouseLeave={() => setCommunesOpen(false)}
+              >
+                Communes <ChevronDown size={14} />
+              </button>
+              <div
+                className={`absolute top-full left-0 bg-white shadow-xl rounded-lg py-2 w-56 transition-all duration-200 ${communesOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+                onMouseEnter={() => setCommunesOpen(true)}
+                onMouseLeave={() => setCommunesOpen(false)}
+              >
+                {communes.map((c) => (
+                  <Link
+                    key={c.slug}
+                    href={`/communes/${c.slug}`}
+                    className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-[#F97316] text-sm transition-colors"
+                  >
+                    {c.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <Link href="/tarifs" className="text-gray-300 hover:text-white transition-colors">
               Tarifs
             </Link>
-            <Link
-              href="/faq"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
-              FAQ
-            </Link>
-            <Link
-              href="/contact"
-              className="text-gray-300 hover:text-white transition-colors"
-            >
+            <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
               Contact
             </Link>
           </nav>
@@ -174,34 +147,11 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-[#152d4a] border-t border-blue-800 px-4 py-4">
           <nav className="flex flex-col gap-3">
-            <Link
-              href="/"
-              className="text-gray-300 hover:text-white py-2 border-b border-blue-800"
-              onClick={() => setMobileOpen(false)}
-            >
+            <Link href="/" className="text-gray-300 hover:text-white py-2 border-b border-blue-800" onClick={() => setMobileOpen(false)}>
               Accueil
             </Link>
             <div>
-              <p className="text-gray-400 text-xs uppercase font-semibold mb-2">
-                Communes
-              </p>
-              <div className="grid grid-cols-2 gap-1">
-                {communes.map((c) => (
-                  <Link
-                    key={c.slug}
-                    href={`/communes/${c.slug}`}
-                    className="text-gray-300 hover:text-[#F97316] py-1 text-sm"
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    {c.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div className="border-t border-blue-800 pt-2">
-              <p className="text-gray-400 text-xs uppercase font-semibold mb-2">
-                Services
-              </p>
+              <p className="text-gray-400 text-xs uppercase font-semibold mb-2">Services</p>
               <div className="grid grid-cols-2 gap-1">
                 {servicesNav.map((s) => (
                   <Link
@@ -215,39 +165,25 @@ export default function Header() {
                 ))}
               </div>
             </div>
-            <Link
-              href="/types-humidite"
-              className="text-gray-300 hover:text-white py-2 border-t border-blue-800"
-              onClick={() => setMobileOpen(false)}
-            >
-              Types d&apos;humidité
-            </Link>
-            <Link
-              href="/blog"
-              className="text-gray-300 hover:text-white py-2 border-t border-blue-800"
-              onClick={() => setMobileOpen(false)}
-            >
-              Blog
-            </Link>
-            <Link
-              href="/tarifs"
-              className="text-gray-300 hover:text-white py-2 border-t border-blue-800"
-              onClick={() => setMobileOpen(false)}
-            >
+            <div className="border-t border-blue-800 pt-2">
+              <p className="text-gray-400 text-xs uppercase font-semibold mb-2">Communes</p>
+              <div className="grid grid-cols-2 gap-1">
+                {communes.map((c) => (
+                  <Link
+                    key={c.slug}
+                    href={`/communes/${c.slug}`}
+                    className="text-gray-300 hover:text-[#F97316] py-1 text-sm"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {c.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <Link href="/tarifs" className="text-gray-300 hover:text-white py-2 border-t border-blue-800" onClick={() => setMobileOpen(false)}>
               Tarifs
             </Link>
-            <Link
-              href="/faq"
-              className="text-gray-300 hover:text-white py-2 border-t border-blue-800"
-              onClick={() => setMobileOpen(false)}
-            >
-              FAQ
-            </Link>
-            <Link
-              href="/contact"
-              className="text-gray-300 hover:text-white py-2 border-t border-blue-800"
-              onClick={() => setMobileOpen(false)}
-            >
+            <Link href="/contact" className="text-gray-300 hover:text-white py-2 border-t border-blue-800" onClick={() => setMobileOpen(false)}>
               Contact
             </Link>
             <a
