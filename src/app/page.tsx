@@ -27,15 +27,25 @@ export const metadata: Metadata = {
 };
 
 const communes = [
-  { name: "Uccle", slug: "uccle" },
-  { name: "Ixelles", slug: "ixelles" },
-  { name: "Woluwe-Saint-Pierre", slug: "woluwe-saint-pierre" },
-  { name: "Woluwe-Saint-Lambert", slug: "woluwe-saint-lambert" },
+  { name: "Anderlecht", slug: "anderlecht" },
   { name: "Auderghem", slug: "auderghem" },
-  { name: "Watermael-Boitsfort", slug: "watermael-boitsfort" },
+  { name: "Berchem-Sainte-Agathe", slug: "berchem-sainte-agathe" },
+  { name: "Bruxelles-Ville", slug: "bruxelles" },
   { name: "Etterbeek", slug: "etterbeek" },
+  { name: "Evere", slug: "evere" },
   { name: "Forest", slug: "forest" },
+  { name: "Ganshoren", slug: "ganshoren" },
+  { name: "Ixelles", slug: "ixelles" },
+  { name: "Jette", slug: "jette" },
+  { name: "Koekelberg", slug: "koekelberg" },
+  { name: "Molenbeek-Saint-Jean", slug: "molenbeek-saint-jean" },
   { name: "Saint-Gilles", slug: "saint-gilles" },
+  { name: "Saint-Josse-ten-Noode", slug: "saint-josse-ten-noode" },
+  { name: "Schaerbeek", slug: "schaerbeek" },
+  { name: "Uccle", slug: "uccle" },
+  { name: "Watermael-Boitsfort", slug: "watermael-boitsfort" },
+  { name: "Woluwe-Saint-Lambert", slug: "woluwe-saint-lambert" },
+  { name: "Woluwe-Saint-Pierre", slug: "woluwe-saint-pierre" },
 ];
 
 const homeFaqs = [
@@ -52,7 +62,7 @@ const homeFaqs = [
   {
     question: "Intervenez-vous sur toute la Région bruxelloise ?",
     answer:
-      "Oui, nous intervenons dans les 19 communes de Bruxelles-Capitale, avec une spécialisation dans les communes suivantes : Uccle, Ixelles, Woluwe-Saint-Pierre, Woluwe-Saint-Lambert, Auderghem, Watermael-Boitsfort, Etterbeek, Forest et Saint-Gilles.",
+      "Oui, nous intervenons dans les 19 communes de Bruxelles-Capitale : Anderlecht, Auderghem, Berchem-Sainte-Agathe, Bruxelles-Ville, Etterbeek, Evere, Forest, Ganshoren, Ixelles, Jette, Koekelberg, Molenbeek-Saint-Jean, Saint-Gilles, Saint-Josse-ten-Noode, Schaerbeek, Uccle, Watermael-Boitsfort, Woluwe-Saint-Lambert et Woluwe-Saint-Pierre. Nous intervenons également dans les communes voisines (Rixensart, La Hulpe, Rhode-Saint-Genèse) sur demande.",
   },
   {
     question: "Quelle garantie offrez-vous sur vos travaux ?",
@@ -379,7 +389,7 @@ export default function HomePage() {
               Zone d&apos;intervention à Bruxelles
             </h2>
             <p className="text-gray-600">
-              Nous intervenons dans 9 communes de la région bruxelloise
+              Nous intervenons dans les 19 communes de la région bruxelloise
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
