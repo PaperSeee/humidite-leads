@@ -73,7 +73,7 @@ const allFaqs = [
   },
   {
     question: "Quelle zone couvrez-vous à Bruxelles ?",
-    answer: "Nous intervenons dans l'ensemble des 19 communes de la Région de Bruxelles-Capitale. Nos zones d'intervention principales sont : Uccle, Ixelles, Woluwe-Saint-Pierre, Woluwe-Saint-Lambert, Auderghem, Watermael-Boitsfort, Etterbeek, Forest et Saint-Gilles. Nous intervenons également dans les communes voisines de la région bruxelloise (Rixensart, La Hulpe, Rhode-Saint-Genèse, Linkebeek) sur demande.",
+    answer: "Nous intervenons dans l'ensemble des 19 communes de la Région de Bruxelles-Capitale : Anderlecht, Auderghem, Berchem-Sainte-Agathe, Bruxelles, Etterbeek, Evere, Forest, Ganshoren, Ixelles, Jette, Koekelberg, Molenbeek-Saint-Jean, Saint-Gilles, Saint-Josse-ten-Noode, Schaerbeek, Uccle, Watermael-Boitsfort, Woluwe-Saint-Lambert et Woluwe-Saint-Pierre. Nous intervenons également dans les communes voisines (Rixensart, La Hulpe, Rhode-Saint-Genèse) sur demande.",
   },
 ];
 
