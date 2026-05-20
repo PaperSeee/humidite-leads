@@ -367,15 +367,25 @@ export default function RemonteeCapillairePage() {
           <h2 className="text-xl font-bold text-[#1E3A5F] mb-4">Zones d&apos;intervention à Bruxelles</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { slug: "uccle", name: "Uccle" },
-              { slug: "ixelles", name: "Ixelles" },
-              { slug: "woluwe-saint-pierre", name: "Woluwe-Saint-Pierre" },
-              { slug: "woluwe-saint-lambert", name: "Woluwe-Saint-Lambert" },
+              { slug: "anderlecht", name: "Anderlecht" },
               { slug: "auderghem", name: "Auderghem" },
-              { slug: "watermael-boitsfort", name: "Watermael-Boitsfort" },
+              { slug: "berchem-sainte-agathe", name: "Berchem-Sainte-Agathe" },
+              { slug: "bruxelles", name: "Bruxelles" },
               { slug: "etterbeek", name: "Etterbeek" },
+              { slug: "evere", name: "Evere" },
               { slug: "forest", name: "Forest" },
+              { slug: "ganshoren", name: "Ganshoren" },
+              { slug: "ixelles", name: "Ixelles" },
+              { slug: "jette", name: "Jette" },
+              { slug: "koekelberg", name: "Koekelberg" },
+              { slug: "molenbeek-saint-jean", name: "Molenbeek-Saint-Jean" },
               { slug: "saint-gilles", name: "Saint-Gilles" },
+              { slug: "saint-josse-ten-noode", name: "Saint-Josse-ten-Noode" },
+              { slug: "schaerbeek", name: "Schaerbeek" },
+              { slug: "uccle", name: "Uccle" },
+              { slug: "watermael-boitsfort", name: "Watermael-Boitsfort" },
+              { slug: "woluwe-saint-lambert", name: "Woluwe-Saint-Lambert" },
+              { slug: "woluwe-saint-pierre", name: "Woluwe-Saint-Pierre" },
             ].map((c) => (
               <Link key={c.slug} href={`/communes/${c.slug}`} className="bg-[#F8FAFC] hover:bg-[#1E3A5F] hover:text-white text-[#1E3A5F] px-3 py-1.5 rounded-lg text-sm font-medium transition-colors border border-gray-200">
                 {c.name}
